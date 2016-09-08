@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html >
+    
+  <head>
+    <title>LOOKme | DASHBOARD</title>
+    
+    <link rel="stylesheet" href="css/profile_home.css">
+      
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"> 
+  </head>
+
+  <body>
+   <header class="header-user-dropdown">
+
+	<div class="header-limiter">
+        <img src="images/lookme logo.png">
+
+
+
+		<div class="header-user-menu">
+			<img src="images/profileimage.png" alt="User Image"/>
+
+			<ul>
+                <li><a href="home.html" class="highlight">SOCIAL</a></li>
+                <li><a href="#events" class="highlight">EVENTS</a></li>
+                <li><a href="#outfits" class="highlight">OUTFITS</a></li>
+                <li><a href="#wardrobe" class="highlight">WARDROBE</a></li>
+				<li><a href="#" class="highlight">Settings</a></li>
+				<li><a href="index.html" class="highlight">Logout</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+</header>
+      
+      
+  <div id="page_effect" style="display:none;">     
+<div class="profileheader">
+    <img src="images/profileimage.png">
+      </div>
+   
+      
+          <div class="username">
+              <h1 >C&#233line Mass&#233</h1>
+              <h2 >@celcel</h2> 
+          </div>
+       
+<div class="AboutSiT">
+
+              <p >19 year old Student/Fashion Blogger</p>
+              <p>WELLINGTON, NZ</p>
+              <div class="space">
+              </div>
+              <hr>
+ <a id="events"></a> 
+<div class="eventsbanner">
+    <!--
+     <a href="events.html"><img src="images/eb.jpg"class="fade"></a>
+    -->
+
+     <div class="view view-first">  
+     <img src="images/eb.jpg" width="100%"/>  
+     <div class="mask">  
+     <h2>E V E N T S</h2> 
+     <a href="events.html" class="info">view upcoming events</a>  
+     </div>  
+     </div>  
+    </div>
+<a id="outfits"></a>
+    <div class="mylooks">
+         <hr>
+        <h2><a href="outfits.html">OUTFITS</a></h2>
+         <hr>
+    </div>
+          <section id="gallery">
+          <div class="images">
+                <a href="outfits.html"><img class="galleryimages" src="images/outfits_3.jpg" width="960"  /></a>
+                <a href="outfits.html"><img class="galleryimages" src="images/outfits_4.jpg" width="960"  /></a>
+                <a href="outfits.html"><img class="galleryimages" src="images/outfits_5.jpg" width="960"  /></a>
+              </div>
+              <p>The latest looks from your feed </p>
+                  <h3><a href="outfits.html">view more</a></h3>
+        </section>
+    
+    <a id="wardrobe"></a>
+       <div class="wardrobebanner">
+           <h2><a href="outfits.html">wardrobe</a></h2>
+       </div>       
+              
+           <section id="gallery">
+          <div class="images">
+                <a href="wardrobe.html"><img class="galleryimages" src="images/ward23.jpg" width="960"  /></a>
+                <a href="wardrobe.html"><img class="galleryimages" src="images/ward10.jpg" width="960"  /></a>
+                <a href="wardrobe.html"><img class="galleryimages" src="images/ward25.jpg" width="960"  /></a>
+              </div>
+              <p>Your latest wardrobe uploads</p>
+                  <h3><a href="wardrobe.html">enter wardrobe</a></h3>
+        </section>
+
+      <hr>
+              
+<div class="footer">
+              <h6>&#169 LOOKme by allister tran | 2016</h6>
+              </div>
+      </div>
+                    
+    <a href="#0" class="cd-top">Top</a>
+      
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/CS_JQ.js"></script>
+    <script>
+
+	$(document).ready(function(){
+
+		var userMenu = $('.header-user-dropdown .header-user-menu');
+
+		userMenu.on('touchend', function(e){
+
+			userMenu.addClass('show');
+
+			e.preventDefault();
+			e.stopPropagation();
+
+		});
+
+
+		$(document).on('touchend', function(e){
+
+			userMenu.removeClass('show');
+
+		});
+
+	});
+
+</script>
+
+   
+  </body>
+</html>

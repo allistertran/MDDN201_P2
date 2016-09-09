@@ -22,28 +22,17 @@ img {
   max-width: 100%;
 }
 
-/* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
 .cd-container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 .cd-container::after {
-  /* clearfix */
   content: '';
   display: table;
   clear: both;
 }
 
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
 .cd-gallery-container {
   margin: 2em auto;
 }
@@ -62,7 +51,6 @@ Main components
   z-index: 10;
 }
 .cd-filter::after {
-  /* small arrow icon */
   content: '';
   position: absolute;
   right: 14px;
@@ -93,7 +81,7 @@ Main components
 }
 .cd-filter li:first-child {
   display: block;
-  /* this way the placehodler is alway visible */
+  
 }
 .cd-filter li:last-child a {
   border-radius: 0 0 .25em .25em;
@@ -124,14 +112,14 @@ Main components
   -ms-transform: translateY(-50%) rotate(-180deg);
   -o-transform: translateY(-50%) rotate(-180deg);
   transform: translateY(-50%) rotate(-180deg);
-  /* small arrow rotation */
+  
 }
 .cd-filter.is-open ul li {
   display: block;
 }
 .cd-filter.is-open .placeholder a {
   opacity: .4;
-  /* reduces the opacity of the placeholder on mobile when the menu is open */
+ 
 }
 @media only screen and (min-width: 768px) {
   .cd-filter {
@@ -172,18 +160,14 @@ Main components
   }
   .cd-filter a.selected:hover {
     box-shadow: none;
-    /* removes the hover effect from the selected item */
+    
   }
   .cd-filter.is-open ul li {
     display: inline-block;
   }
 }
 
-/* -------------------------------- 
 
-xgallery 
-
--------------------------------- */
 .cd-gallery {
   margin-top: 2em;
   position: relative;
@@ -194,11 +178,9 @@ xgallery
   margin-bottom: 1em;
 }
 .cd-gallery .cd-item-wrapper {
-  /* this is the item that rotates */
   position: relative;
 }
 .touch .cd-gallery .cd-item-wrapper {
-  /* fix a bug on IOS8 - rotating elements dissapear*/
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
   perspective: 800px;
@@ -236,12 +218,12 @@ xgallery
   width: 100%;
 }
 .cd-gallery li.is-visible {
-  /* the front item, visible by default */
+  
   position: relative;
   z-index: 5;
 }
 .cd-gallery li.is-hidden {
-  /* the hidden items, right behind the front one */
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -255,7 +237,7 @@ xgallery
   transform: rotateY(180deg);
 }
 .cd-gallery li.is-selected {
-  /* the next item that will be visible */
+  
   z-index: 3 !important;
 }
 @media only screen and (min-width: 480px) {
@@ -287,18 +269,13 @@ xgallery
   }
 }
 
-/* -------------------------------- 
-
-xkeyframes 
-
--------------------------------- */
 @-webkit-keyframes cd-rotate {
   0% {
     -webkit-transform: perspective(800px) rotateY(0);
   }
   70% {
     -webkit-transform: perspective(800px) rotateY(200deg);
-    /* this creates the bounce effect */
+   
   }
   100% {
     -webkit-transform: perspective(800px) rotateY(180deg);
@@ -310,7 +287,7 @@ xkeyframes
   }
   70% {
     -moz-transform: perspective(800px) rotateY(200deg);
-    /* this creates the bounce effect */
+   
   }
   100% {
     -moz-transform: perspective(800px) rotateY(180deg);
@@ -330,7 +307,7 @@ xkeyframes
     -ms-transform: perspective(800px) rotateY(200deg);
     -o-transform: perspective(800px) rotateY(200deg);
     transform: perspective(800px) rotateY(200deg);
-    /* this creates the bounce effect */
+   
   }
   100% {
     -webkit-transform: perspective(800px) rotateY(180deg);
@@ -358,7 +335,7 @@ xkeyframes
   }
   70% {
     -moz-transform: perspective(800px) rotateY(20deg);
-    /* this creates the bounce effect */
+    
   }
   100% {
     -moz-transform: perspective(800px) rotateY(0);
@@ -378,7 +355,7 @@ xkeyframes
     -ms-transform: perspective(800px) rotateY(20deg);
     -o-transform: perspective(800px) rotateY(20deg);
     transform: perspective(800px) rotateY(20deg);
-    /* this creates the bounce effect */
+    
   }
   100% {
     -webkit-transform: perspective(800px) rotateY(0);

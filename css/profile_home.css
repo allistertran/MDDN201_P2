@@ -636,10 +636,6 @@ width:40px;
 
 
 
-/* The navigation links */
-
-
-
 /* login button */
 
 .header-login-signup .header-limiter ul {
@@ -673,7 +669,6 @@ width:40px;
 	border-radius: 2px;
 }
 
-/* Making the header responsive */
 
 @media all and (max-width: 600px) {
 
